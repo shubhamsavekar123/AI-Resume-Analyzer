@@ -178,7 +178,7 @@ def run():
 
     with col1:
         st.markdown(
-            "<h2 style='color:#00E5FF; text-align:center; font-weight:bold;'>From Resume to Interview — Powered by AI</h2>",
+            "<h2 style='color:#00E5FF; text-align:center; font-weight:bold;'>From Resume to Interview — Hire Harmony Powered by AI </h2>",
             unsafe_allow_html=True
         )
         st.image("LOGO1.png", use_column_width=True)
