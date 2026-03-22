@@ -5,4 +5,4 @@ plotly
 pdfplumber
 pdfminer.six
 nltk
-spacy==3.7.2
+
