@@ -204,7 +204,7 @@ def run():
 
                 name = extract_name_from_pdf(save_path)
                 email = clean_email(resume_data.get('email', ''))
-                pages = resume_data.get('no_of_pages', 1)
+                pages = resume_data.get('no_of_pages', 0)
                 skills = resume_data.get('skills', [])
 
                 st.success(f"Hello {name}")
