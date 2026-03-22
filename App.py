@@ -17,7 +17,6 @@ from courses import ds_course,ml_course,web_course,android_course,ios_course,uiu
 import plotly.express as px
 import nltk
 
-# Optional (won’t break deployment if fails)
 try:
     nltk.download('stopwords')
     nltk.download('punkt')
@@ -150,7 +149,6 @@ def extract_name_from_pdf(file):
 
     return "Candidate"
 
-# ✅ NEW: Replacement for pyresparser
 def simple_resume_parser(file_path):
     text = pdf_reader(file_path)
 
@@ -173,8 +171,6 @@ def simple_resume_parser(file_path):
         'skills': found_skills,
         'no_of_pages': text.count('\f') 
     }
-
-# STREAMLIT APP
 
 def run():
     os.makedirs("Uploaded_Resumes", exist_ok=True)
@@ -204,7 +200,7 @@ def run():
 
             show_pdf(save_path)
 
-            # ✅ FIXED LINE
+            
             resume_data = simple_resume_parser(save_path)
 
             if resume_data:
