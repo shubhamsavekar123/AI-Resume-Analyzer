@@ -5,7 +5,3 @@ plotly
 pdfplumber
 pdfminer.six
 nltk
-
-spacy==2.3.5
-pyresparser==1.0.6
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
