@@ -162,7 +162,7 @@ def simple_resume_parser(file_path):
     return {
         'email': email,
         'skills': found_skills,
-        'no_of_pages': text.count('\f') + 1
+        'no_of_pages': text.count('\f') 
     }
 
 # STREAMLIT APP
@@ -204,7 +204,7 @@ def run():
 
                 name = extract_name_from_pdf(save_path)
                 email = clean_email(resume_data.get('email', ''))
-                pages = resume_data.get('no_of_pages', 0)
+                pages = resume_data.get('no_of_pages', 1)
                 skills = resume_data.get('skills', [])
 
                 st.success(f"Hello {name}")
