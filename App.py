@@ -1,7 +1,8 @@
 import streamlit as st
 
 st.set_page_config(page_title="AI Resume Analyzer", layout="wide")
-
+import spacy
+spacy.cli.download("en_core_web_sm")
 import pandas as pd
 import base64, random, os, re
 import datetime
@@ -18,6 +19,7 @@ import plotly.express as px
 import nltk
 
 nltk.download('stopwords')
+nltk.download('punkt')
 
 # DATABASE CONNECTION 
 
