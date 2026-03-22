@@ -176,10 +176,10 @@ def run():
             "<h2 style='color:#00E5FF; text-align:center; font-weight:bold;'>From Resume to Interview — Powered by AI</h2>",
             unsafe_allow_html=True
         )
-        st.image("Logo/LOGO1.png", use_column_width=True)
+        st.image("LOGO1.png", use_column_width=True)
 
     with col2:
-        st.image("Logo/LOGO2.png",use_column_width=True)
+        st.image("LOGO2.png",use_column_width=True)
 
     choice = st.sidebar.selectbox("Select Panel", ["User", "Admin"])
 
