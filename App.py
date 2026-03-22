@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="AI Resume Analyzer", layout="wide")
+st.set_page_config(page_title="Hire Harmony-Resume Analyzer", layout="wide")
 
 
 import pandas as pd
